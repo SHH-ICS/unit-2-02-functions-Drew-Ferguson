@@ -1,9 +1,10 @@
 # My Python Program
 # Task:  Use the function myFunction to output a simple "Hello World!" statement
 
-  # My Function
-def myFunction():
-    print("Hello World!")
+def myFunction(name):
+    return f"Hello, {name}!"
 
-# Call the function
-myFunction()
+# Example of calling the function
+first_name = input("Enter your first name: ")
+greeting = myFunction(first_name)
+print(greeting)
